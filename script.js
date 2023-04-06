@@ -206,14 +206,11 @@ function initial() {
 }
 
 //when user click on start button
-startButton.addEventListener("click", () => {
-    startScreen.classList.add("hide");
-    displayContainer.classList.remove("hide");
-    initial();
-});
+
 
 //hide quiz and display start screen
 window.onload = () => {
     startScreen.classList.remove("hide");
     displayContainer.classList.add("hide");
 };
+initial();
